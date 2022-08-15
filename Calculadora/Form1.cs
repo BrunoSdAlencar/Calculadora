@@ -13,7 +13,7 @@ namespace Calculadora
     public partial class Form1 : Form
     {
         string operador;
-        int a = 0;
+        double a = 0;
         bool validar = false;
 
         public Form1() {
@@ -34,13 +34,13 @@ namespace Calculadora
 
         private void btsom_Click(object sender, EventArgs e) {
             if(validar == true) {
-                a = a + Convert.ToInt32(txtvalor.Text);
+                a = a + Convert.ToDouble(txtvalor.Text);
                 label1.Text = Convert.ToString(a) + "+";
                 txtvalor.Text = "";
                 operador = "+";
             } else {
                 label1.Text = txtvalor.Text + btsom.Text;
-                a = Convert.ToInt32(txtvalor.Text);
+                a = Convert.ToDouble(txtvalor.Text);
                 txtvalor.Text = "";
                 operador = "+";
                 validar = true;
@@ -49,13 +49,13 @@ namespace Calculadora
 
         private void btsub_Click(object sender, EventArgs e) {
             if (validar == true) {
-                a = a - Convert.ToInt32(txtvalor.Text);
+                a = a - Convert.ToDouble(txtvalor.Text);
                 label1.Text = Convert.ToString(a) + "-";
                 txtvalor.Text = "";
                 operador = "-";
             } else {
                 label1.Text = txtvalor.Text + btsub.Text;
-                a = Convert.ToInt32(txtvalor.Text);
+                a = Convert.ToDouble(txtvalor.Text);
                 txtvalor.Text = "";
                 operador = "-";
                 validar = true;
@@ -64,13 +64,13 @@ namespace Calculadora
 
         private void btmult_Click(object sender, EventArgs e) {
             if (validar == true) {
-                a = a * Convert.ToInt32(txtvalor.Text);
+                a = a * Convert.ToDouble(txtvalor.Text);
                 label1.Text = Convert.ToString(a) + "*";
                 txtvalor.Text = "";
                 operador = "*";
             } else {
                 label1.Text = txtvalor.Text + btmult.Text;
-                a = Convert.ToInt32(txtvalor.Text);
+                a = Convert.ToDouble(txtvalor.Text);
                 txtvalor.Text = "";
                 operador = "*";
                 validar = true;
@@ -79,13 +79,13 @@ namespace Calculadora
 
         private void btdiv_Click(object sender, EventArgs e) {
             if (validar == true) {
-                a = a / Convert.ToInt32(txtvalor.Text);
+                a = a / Convert.ToDouble(txtvalor.Text);
                 label1.Text = Convert.ToString(a) + "/";
                 txtvalor.Text = "";
                 operador = "/";
             } else {
                 label1.Text = txtvalor.Text + btdiv.Text;
-                a = Convert.ToInt32(txtvalor.Text);
+                a = Convert.ToDouble(txtvalor.Text);
                 txtvalor.Text = "";
                 operador = "/";
                 validar = true;
@@ -95,16 +95,16 @@ namespace Calculadora
         private void btigual_Click(object sender, EventArgs e) {
             if (operador=="+") {
                 label1.Text = label1.Text + txtvalor.Text + "=";
-                txtvalor.Text = Convert.ToString(a + Convert.ToInt32(txtvalor.Text));
+                txtvalor.Text = Convert.ToString(a + Convert.ToDouble(txtvalor.Text));
             } else if (operador=="-") {
                 label1.Text = label1.Text + txtvalor.Text + "=";
-                txtvalor.Text = Convert.ToString(a - Convert.ToInt32(txtvalor.Text));
+                txtvalor.Text = Convert.ToString(a - Convert.ToDouble(txtvalor.Text));
             } else if (operador=="*") {
                 label1.Text = label1.Text + txtvalor.Text + "=";
-                txtvalor.Text = Convert.ToString(a * Convert.ToInt32(txtvalor.Text));
+                txtvalor.Text = Convert.ToString(a * Convert.ToDouble(txtvalor.Text));
             } else if (operador=="/") {
                 label1.Text = label1.Text + txtvalor.Text + "=";
-                txtvalor.Text = Convert.ToString(a / Convert.ToInt32(txtvalor.Text));
+                txtvalor.Text = Convert.ToString(a / Convert.ToDouble(txtvalor.Text));
             }
         }
     }
