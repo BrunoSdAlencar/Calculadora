@@ -42,8 +42,8 @@
             this.btigual = new System.Windows.Forms.Button();
             this.bt0 = new System.Windows.Forms.Button();
             this.btvir = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtvalor = new System.Windows.Forms.Label();
+            this.txtvalor = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bt7
@@ -154,6 +154,7 @@
             this.btsub.TabIndex = 14;
             this.btsub.Text = "-";
             this.btsub.UseVisualStyleBackColor = true;
+            this.btsub.Click += new System.EventHandler(this.btsub_Click);
             // 
             // btsom
             // 
@@ -164,6 +165,7 @@
             this.btsom.TabIndex = 13;
             this.btsom.Text = "+";
             this.btsom.UseVisualStyleBackColor = true;
+            this.btsom.Click += new System.EventHandler(this.btsom_Click);
             // 
             // btdiv
             // 
@@ -174,6 +176,7 @@
             this.btdiv.TabIndex = 12;
             this.btdiv.Text = "/";
             this.btdiv.UseVisualStyleBackColor = true;
+            this.btdiv.Click += new System.EventHandler(this.btdiv_Click);
             // 
             // btmult
             // 
@@ -184,6 +187,7 @@
             this.btmult.TabIndex = 11;
             this.btmult.Text = "*";
             this.btmult.UseVisualStyleBackColor = true;
+            this.btmult.Click += new System.EventHandler(this.btmult_Click);
             // 
             // btlimpar
             // 
@@ -205,7 +209,7 @@
             this.btigual.TabIndex = 15;
             this.btigual.Text = "=";
             this.btigual.UseVisualStyleBackColor = true;
-            this.btigual.Click += new System.EventHandler(this.btnNumerador_Click);
+            this.btigual.Click += new System.EventHandler(this.btigual_Click);
             // 
             // bt0
             // 
@@ -229,32 +233,33 @@
             this.btvir.UseVisualStyleBackColor = true;
             this.btvir.Click += new System.EventHandler(this.btnNumerador_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(25, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(554, 40);
-            this.textBox1.TabIndex = 18;
-            // 
             // txtvalor
             // 
-            this.txtvalor.AutoSize = true;
-            this.txtvalor.BackColor = System.Drawing.Color.White;
-            this.txtvalor.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtvalor.Location = new System.Drawing.Point(30, 24);
+            this.txtvalor.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtvalor.Location = new System.Drawing.Point(25, 12);
             this.txtvalor.Name = "txtvalor";
-            this.txtvalor.Size = new System.Drawing.Size(0, 24);
-            this.txtvalor.TabIndex = 19;
-            this.txtvalor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtvalor.Size = new System.Drawing.Size(554, 41);
+            this.txtvalor.TabIndex = 18;
+            this.txtvalor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 27);
+            this.label1.TabIndex = 19;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 305);
+            this.ClientSize = new System.Drawing.Size(787, 536);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtvalor);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btvir);
             this.Controls.Add(this.bt0);
             this.Controls.Add(this.btigual);
@@ -300,8 +305,8 @@
         private System.Windows.Forms.Button btigual;
         private System.Windows.Forms.Button bt0;
         private System.Windows.Forms.Button btvir;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label txtvalor;
+        private System.Windows.Forms.TextBox txtvalor;
+        private System.Windows.Forms.Label label1;
     }
 }
 
