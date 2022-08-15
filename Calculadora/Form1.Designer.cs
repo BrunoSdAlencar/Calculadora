@@ -148,7 +148,7 @@
             // btsub
             // 
             this.btsub.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btsub.Location = new System.Drawing.Point(473, 181);
+            this.btsub.Location = new System.Drawing.Point(361, 181);
             this.btsub.Name = "btsub";
             this.btsub.Size = new System.Drawing.Size(106, 55);
             this.btsub.TabIndex = 14;
@@ -159,7 +159,7 @@
             // btsom
             // 
             this.btsom.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btsom.Location = new System.Drawing.Point(361, 181);
+            this.btsom.Location = new System.Drawing.Point(361, 242);
             this.btsom.Name = "btsom";
             this.btsom.Size = new System.Drawing.Size(106, 55);
             this.btsom.TabIndex = 13;
@@ -170,7 +170,7 @@
             // btdiv
             // 
             this.btdiv.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btdiv.Location = new System.Drawing.Point(473, 120);
+            this.btdiv.Location = new System.Drawing.Point(361, 120);
             this.btdiv.Name = "btdiv";
             this.btdiv.Size = new System.Drawing.Size(106, 55);
             this.btdiv.TabIndex = 12;
@@ -181,7 +181,7 @@
             // btmult
             // 
             this.btmult.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmult.Location = new System.Drawing.Point(361, 120);
+            this.btmult.Location = new System.Drawing.Point(361, 59);
             this.btmult.Name = "btmult";
             this.btmult.Size = new System.Drawing.Size(106, 55);
             this.btmult.TabIndex = 11;
@@ -192,9 +192,9 @@
             // btlimpar
             // 
             this.btlimpar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btlimpar.Location = new System.Drawing.Point(361, 59);
+            this.btlimpar.Location = new System.Drawing.Point(473, 59);
             this.btlimpar.Name = "btlimpar";
-            this.btlimpar.Size = new System.Drawing.Size(218, 55);
+            this.btlimpar.Size = new System.Drawing.Size(106, 116);
             this.btlimpar.TabIndex = 9;
             this.btlimpar.Text = "C";
             this.btlimpar.UseVisualStyleBackColor = true;
@@ -203,9 +203,9 @@
             // btigual
             // 
             this.btigual.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btigual.Location = new System.Drawing.Point(361, 242);
+            this.btigual.Location = new System.Drawing.Point(473, 181);
             this.btigual.Name = "btigual";
-            this.btigual.Size = new System.Drawing.Size(218, 55);
+            this.btigual.Size = new System.Drawing.Size(106, 116);
             this.btigual.TabIndex = 15;
             this.btigual.Text = "=";
             this.btigual.UseVisualStyleBackColor = true;
@@ -214,9 +214,9 @@
             // bt0
             // 
             this.bt0.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt0.Location = new System.Drawing.Point(25, 242);
+            this.bt0.Location = new System.Drawing.Point(137, 242);
             this.bt0.Name = "bt0";
-            this.bt0.Size = new System.Drawing.Size(218, 55);
+            this.bt0.Size = new System.Drawing.Size(106, 55);
             this.bt0.TabIndex = 16;
             this.bt0.Text = "0";
             this.bt0.UseVisualStyleBackColor = true;
@@ -257,7 +257,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 536);
+            this.ClientSize = new System.Drawing.Size(598, 310);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtvalor);
             this.Controls.Add(this.btvir);
